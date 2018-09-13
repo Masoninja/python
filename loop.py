@@ -15,4 +15,4 @@ while (gcat < 51535):
 			print( " Error: Unexpeced Variable - Outcome Undetermined")
 		gcat = gcat + 1
 		
-
+#i need to mess with the code more, it helps me to figure out how to apply it.
