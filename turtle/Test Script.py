@@ -1,4 +1,5 @@
 #ex4b mka
+#Mostly Just for messing around with this code, Still figuring turtle out.
 import turtle  
 w = turtle.Screen()
 w.bgcolor("#00cbcc")
