@@ -1,0 +1,38 @@
+#ex4b mka
+import turtle  
+w = turtle.Screen()
+w.bgcolor("#00cbcc")
+t = turtle.Turtle()
+t.speed(0)
+t.color("#cc0000")
+
+def thepoly(size):
+    for i in range(375):
+        t.fd(size)
+        t.left(-144)
+        t.right(125)
+        t.goto(0,0)
+        size = size + 1
+        
+
+
+thepoly(300)
+
+t.goto(-120,75) 
+
+t.color("orange")
+
+def thepoly(size):
+    for i in range(450): 
+        t.fd(size)
+        t.left(-144)
+        t.right(125)
+        size = size + 1
+        
+
+
+thepoly(200)
+
+holdit = input();
+
+
