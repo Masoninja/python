@@ -13,7 +13,7 @@ def Natural20(line, spiral, goto, gotonum, distance, tracker): #shape1 and shape
     ts.clear()
     t = turtle.Turtle()
     ts.bgcolor("#67645f")
-
+    t.speed(10)
     t.penup()
     t.goto(0,50)
     t.setheading(0)
