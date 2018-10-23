@@ -54,6 +54,7 @@ def Natural20(line, spiral, goto, gotonum, distance, tracker): #shape1 and shape
 
     t.width(3)#The Two
     t.penup()
+    t.color("#ffffff")
     t.goto(-15, 5)
     t.right(90)
     t.pendown()
