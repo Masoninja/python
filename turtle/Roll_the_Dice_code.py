@@ -8,9 +8,8 @@ ts.bgcolor("#67645f")
 t.width(10)
 
 #Dice Start
-t.width(1)
 
-def Natural20(line, spiral, goto, gotonum, distance): #shape1 and shape 2 should be last, and add a nat 20 dice for cool spell
+def Natural20(line, spiral, goto, gotonum, distance, tracker): #shape1 and shape 2 should be last, and add a nat 20 dice for cool spell
     ts.clear()
     t = turtle.Turtle()
     ts.bgcolor("#67645f")
@@ -89,7 +88,33 @@ def Natural20(line, spiral, goto, gotonum, distance): #shape1 and shape 2 should
     t.penup() #star start
     t.color("#1ed3de")
     t.setheading(252)
-    for i in range(1): #need a range
+    for i in range(13): #need a range
+        if tracker == 1:
+            t.color("#1ed3de")
+        elif tracker == 2:
+            t.color("#1edec7")
+        elif tracker == 3:
+            t.color("#1ede5f")
+        elif tracker == 4:
+            t.color("#89de1e")
+        elif tracker == 5:
+            t.color("#dade1e")
+        elif tracker == 6:
+            t.color("#de6f1e")
+        elif tracker == 7:
+            t.color("#de1e1e")
+        elif tracker == 8:
+            t.color("#de6f1e")
+        elif tracker == 9:
+            t.color("#dade1e")
+        elif tracker == 10:
+            t.color("#89de1e")
+        elif tracker == 11:
+            t.color("#1ede5f")
+        elif tracker == 12:
+            t.color("#1edec7")
+        elif tracker == 13:
+            t.color("#1ed3de")
         t.goto(0, gotonum)
         t.pendown()
         t.fd(distance)
@@ -104,204 +129,13 @@ def Natural20(line, spiral, goto, gotonum, distance): #shape1 and shape 2 should
         t.left(180 - 36)
         gotonum = gotonum + 5
         distance = distance + 10
-        t.color("#1edec7")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#1ede5f")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#89de1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#dade1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#de6f1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#de1e1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#de6f1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#dade1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#89de1e")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#1ede5f")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#1edec7")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        gotonum = gotonum + 5
-        distance = distance + 10
-        t.color("#1ed3de")
-        t.goto(0, gotonum)
-        t.pendown()
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.fd(distance)
-        t.left(180 - 36)
-        t.color('#ffffff')
-        t.setheading(180)
-        t.circle(300)
-        t.setheading(90)
-        t.penup()
-        t.fd(5)
-        t.pendown()
-        t.color('#000000')
-        t.setheading(180)
-        t.circle(305)
-        t.setheading(90)
-        t.penup()
-        t.fd(5)
-        t.pendown()
-        t.color("#a70707")
-        t.setheading(180)
-        t.circle(310)
+        tracker = tracker + 1
+
+
 
 def run():
-    Natural20(85, 120, 50, 232.5, 450)
+    Natural20(85, 120, 50, 232.5, 450, 1)
+
 
 root = tk.Tk()
 root.option_add("*Font", "courier")
