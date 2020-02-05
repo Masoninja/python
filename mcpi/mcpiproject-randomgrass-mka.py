@@ -12,11 +12,12 @@ def init():
  #x, y, z = mc.player.getPos()  
  return mc
  
- mc.postToChat("Crimson")
+
  
 def dirt(mc,x,y,z):
 	dirtcount = 0
 	rowcount = 0
+	mc.postToChat("Crimson")
 	while(rowcount <= 16):
 		dirtcolor = randint(0,5)
 		print(str(dirtcolor))
